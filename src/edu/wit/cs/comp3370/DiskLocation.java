@@ -10,7 +10,7 @@ public class DiskLocation {
 	public DiskLocation left;
 	public DiskLocation right;
 	public DiskLocation parent;
-	
+
 	public boolean isGreaterThan(DiskLocation that) {
 		if (this.track > that.track)
 			return true;
@@ -18,11 +18,15 @@ public class DiskLocation {
 			return true;
 		return false;
 	}
-	
+
+	public boolean isLessThan(DiskLocation that) {
+		return !isGreaterThan(that) && !equals(that);
+	}
+
 	public boolean equals(DiskLocation that) {
 		return (this.track == that.track && this.sector == that.sector);
 	}
-	
+
 	public DiskLocation(int t, int s) {
 		track = t;
 		sector = s;
@@ -30,7 +34,8 @@ public class DiskLocation {
 		right = null;
 		parent = null;
 	}
-	
+
+	@Override
 	public String toString() {
 		if (track < 0)
 			return new String("");
