@@ -1,0 +1,18 @@
+Score: 90
+
+some nodes are not inserted correctly (or next is skipping over them)
+
+== junit ==
+edu.wit.cs.comp3370.grading.LAB4Grading#testHeightSmall: +10
+edu.wit.cs.comp3370.grading.LAB4Grading#testPrevLarge: +5
+edu.wit.cs.comp3370.grading.LAB4Grading#testPrevSmall: +10
+edu.wit.cs.comp3370.grading.LAB4Grading#testInsertRand: +15
+edu.wit.cs.comp3370.grading.LAB4Grading#testInsertSeq: +10
+edu.wit.cs.comp3370.grading.LAB4Grading#testInsertMedium: +10
+edu.wit.cs.comp3370.grading.LAB4Grading#testNextLarge: +5
+edu.wit.cs.comp3370.grading.LAB4Grading#testNextSmall: +10
+edu.wit.cs.comp3370.grading.LAB4Grading#testFind: +15
+edu.wit.cs.comp3370.grading.LAB4Grading#testSize: +0
+
+== ontime ==
+ontime: +0
